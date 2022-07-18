@@ -9,6 +9,13 @@ export const AuthCardWrapper = styled.div`
   color: #ffffff;
   padding: 32px;
 
+  img {
+    position: absolute;
+    left: 50%;
+    top: -108px;
+    transform: translate(-50%);
+  }
+
   h1 {
     font-weight: 300;
     font-size: 32px;
