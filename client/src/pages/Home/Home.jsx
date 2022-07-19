@@ -1,5 +1,6 @@
 import React from "react";
 import useFetch from "use-http";
+import { HomeWrapper } from "./Home.style";
 
 export default function Home() {
   const options = {}; // these options accept all native `fetch` options
@@ -11,5 +12,5 @@ export default function Home() {
   } = useFetch("http://localhost:8080/movies", options, []);
 
   console.log(data);
-  return <div>Home</div>;
+  return <HomeWrapper>Home</HomeWrapper>;
 }

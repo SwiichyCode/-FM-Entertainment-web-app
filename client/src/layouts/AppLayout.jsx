@@ -1,24 +1,21 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import styled from "styled-components";
+
+import Sidebar from "../components/Sidebar/Sidebar";
 
 export default function AppLayout() {
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/movies">Movies</Link>
-        </li>
-        <li>
-          <Link to="/series">Series</Link>
-        </li>
-        <li>
-          <Link to="/bookmarked">Bookmarked</Link>
-        </li>
-      </ul>
+    <AppLayoutWrapper>
+      <Sidebar />
       <Outlet />
-    </div>
+    </AppLayoutWrapper>
   );
 }
+
+const AppLayoutWrapper = styled.div`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #10141e;
+`;
