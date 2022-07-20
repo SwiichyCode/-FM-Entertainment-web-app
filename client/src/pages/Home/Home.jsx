@@ -1,5 +1,7 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 import useFetch from "use-http";
+import Caroussel from "../../components/Caroussel/Caroussel";
 import { HomeWrapper } from "./Home.style";
 
 export default function Home() {
@@ -10,7 +12,11 @@ export default function Home() {
     error,
     data = [],
   } = useFetch("http://localhost:8080/movies", options, []);
+  const [value, setValue] = useOutletContext();
 
-  console.log(data);
-  return <HomeWrapper>Home</HomeWrapper>;
+  return (
+    <HomeWrapper>
+      <Caroussel data={data} />
+    </HomeWrapper>
+  );
 }
