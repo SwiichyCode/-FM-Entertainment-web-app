@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { PlayBtnWrapper } from "../PlayBtn/PlayBtn.style";
 
-export const TrendingCardWrapper = styled.div`
+export const CardTrendingWrapper = styled.div`
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -56,24 +56,5 @@ export const TrendingCardWrapper = styled.div`
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
-  }
-
-  .trendingCard-bookmarked {
-    position: absolute;
-    top: 16px;
-    right: 24px;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #10141e;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-
-    .bookmark-icon {
-      color: #fff;
-    }
   }
 `;

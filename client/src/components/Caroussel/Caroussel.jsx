@@ -2,17 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 
 import { CarousselWrapper } from "./Caroussel.style";
-import TrendingCard from "../TrendingCard/TrendingCard";
+import TrendingCard from "../CardTrending/CardTrending";
 
-export default function Caroussel({ data }) {
+export default function Caroussel({ data, loading }) {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 8000,
     arrows: false,
     variableWidth: true,
   };

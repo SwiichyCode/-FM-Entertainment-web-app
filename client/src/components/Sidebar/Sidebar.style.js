@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const SidebarWrapper = styled.div`
   width: 100%;
-  height: 93%;
   max-width: 96px;
-  max-height: 960px;
+  max-height: 860px;
   display: flex;
   flex-direction: column;
   align-items: center;
