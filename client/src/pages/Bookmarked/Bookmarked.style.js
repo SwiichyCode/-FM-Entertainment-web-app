@@ -1,3 +1,5 @@
 import styled from "styled-components";
 
-export const BookmarkedWrapper = styled.div``;
+export const BookmarkedWrapper = styled.div`
+  height: 100vh;
+`;

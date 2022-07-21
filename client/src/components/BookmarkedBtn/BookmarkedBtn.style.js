@@ -14,6 +14,7 @@ export const BookmarkedBtnWrapper = styled.div`
   mix-blend-mode: normal;
   opacity: 0.5;
   cursor: pointer;
+  z-index: 999;
 
   .bookmark-icon {
     color: #fff;

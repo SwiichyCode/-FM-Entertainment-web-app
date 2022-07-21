@@ -14,6 +14,7 @@ export const PlayBtnWrapper = styled.button`
   border-radius: 28.5px;
   border: none;
   padding: 0;
+  z-index: 899;
 
   img {
     mix-blend-mode: unset;

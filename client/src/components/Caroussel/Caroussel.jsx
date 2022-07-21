@@ -4,11 +4,11 @@ import Slider from "react-slick";
 import { CarousselWrapper } from "./Caroussel.style";
 import TrendingCard from "../CardTrending/CardTrending";
 
-export default function Caroussel({ data, loading }) {
+export default function Caroussel({ data, foundItems, setFoundItems }) {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -30,7 +30,11 @@ export default function Caroussel({ data, loading }) {
               width: 470,
             }}
           >
-            <TrendingCard item={item} />
+            <TrendingCard
+              item={item}
+              foundItems={foundItems}
+              setFoundItems={setFoundItems}
+            />
           </div>
         ))}
       </Slider>
